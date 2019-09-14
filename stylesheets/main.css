@@ -735,7 +735,7 @@ color: rgb(255, 255, 255); font-size: 18px;  background-color: rgb(247, 148, 29)
 
 	
 
-	 .cta_bg, .dark.cta_bg { background: url(../images/main/cta-bg.jpg) #333 fixed no-repeat;
+	 .cta_bg, .dark.cta_bg { background: url(../images/main/bg2.jpg) #333 fixed no-repeat;
 		-webkit-background-size:cover;
 		-moz-background-size:cover;
 		-o-background-size:cover;
@@ -1008,7 +1008,7 @@ color: rgb(255, 255, 255); font-size: 18px;  background-color: rgb(247, 148, 29)
 		.black_bg, .dark.black_bg { background: #000; }
 		.soft_dark_gray_bg, .dark.soft_dark_gray_bg { background: #282828 }
 
-		.pix_builder_bg.custom_moving_bg { background: url(../images/main/timg.jpg) fixed #444 center ;
+		.pix_builder_bg.custom_moving_bg { background: url(../images/main/banner.png) fixed #444 center ;
 			-webkit-background-size:cover;
 			-moz-background-size:cover;
 			-o-background-size:cover;
