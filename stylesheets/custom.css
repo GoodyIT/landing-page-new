@@ -920,3 +920,20 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+.isotope-item {
+	margin-bottom: 30px;	
+}
+.grid-space-20 .isotope-item {
+	margin-bottom: 20px;
+}
+.grid-space-10 .isotope-item {
+	margin-bottom: 0;
+}
+
+/* Small devices (tablets, phones less than 767px) */
+@media (max-width:767px) {
+	.isotope-item {
+		max-width: 100%;
+	}
+}

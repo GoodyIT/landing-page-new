@@ -26,7 +26,7 @@ jQuery(document).ready(function($){
   // Isotope filters
       //-----------------------------------------------
     if ($('.isotope-container').length>0 || $('.masonry-grid').length>0 || $('.masonry-grid-fitrows').length>0) {
-      $(window).on("load", function() {
+      // $(window).on("load", function() {
         $('.masonry-grid').isotope({
           itemSelector: '.masonry-grid-item',
           layoutMode: 'masonry'
@@ -50,8 +50,31 @@ jQuery(document).ready(function($){
           $container.isotope({ filter: filterValue });
           return false;
         });
-      });
+      // });
     };
+
+    // Magnific popup
+		//-----------------------------------------------
+		if (($(".popup-img").length > 0) || ($(".popup-iframe").length > 0) || ($(".popup-img-single").length > 0)) {
+			$(".popup-img").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: true,
+				}
+			});
+			$(".popup-img-single").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: false,
+				}
+			});
+			$('.popup-iframe').magnificPopup({
+				disableOn: 700,
+				type: 'iframe',
+				preloader: false,
+				fixedContentPos: false
+			});
+		};
 
     // Animations
 		//-----------------------------------------------
@@ -75,7 +98,7 @@ jQuery(document).ready(function($){
 		};
 
 
-    $(window).on("load", function() {
+    // $(window).on("load", function() {
         mapboxgl.accessToken = 'pk.eyJ1IjoidG9wZGV2MDAzIiwiYSI6ImNqcHg1bmw4ODBpN2c0OW9kc2JjZW1zdWoifQ.50gYTaOTgxBYvtIi6eQVGA';
         var map = new mapboxgl.Map({
             container: 'map',
@@ -138,7 +161,7 @@ jQuery(document).ready(function($){
             }
         });
 
-    });
+    // });
   });
 
       
