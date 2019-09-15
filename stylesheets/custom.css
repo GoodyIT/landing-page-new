@@ -766,6 +766,18 @@
 	display: block;
 	overflow: hidden;
 }
+
+.overlay-container img {
+    transition: 300ms all ease-in-out;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-container:hover img {
+    transform: scale(1.1);
+}
+
 .overlay {
 	position: absolute;
 	top: 0;
@@ -1017,6 +1029,11 @@ img {
     color: white;
     padding: 1em 3.8em;
     font-size: 1.2rem;
+    top: 86%;
+    left: 50%;
+    transform: translate(-150%, -50%);
+    position: absolute;
+    z-index: 10;
 }
 
 a.pi:hover {
