@@ -1,10 +1,18 @@
 .fixed {
     overflow: hidden;
-    background-color: #fff;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
+}
+
+.fixed ul li a {
+    color: #918e8e;
+}
+
+.fixed-header-on .fixed {
+    background: #fff;
+    color: rgb(51, 51, 51);
 }
 
 .python-bg {
@@ -974,8 +982,11 @@ img {
 
 .navbar {
     border-radius: 0;
-    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
-    opacity: 0.85;
+    -webkit-box-shadow: 0 5px 17px 0 rgba(0,0,0,.05);
+    box-shadow: 0 5px 17px 0 rgba(0,0,0,.05);
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    opacity: 0.9;
 }
 
 .box-style-3 h2 {
@@ -998,4 +1009,51 @@ img {
 .link-contact-us {
     background: #eb1c23;
     color: white;
+    padding: .5em 1.8em;
+}
+
+.get-started {
+    background: #eb1c23;
+    color: white;
+    padding: 1em 3.8em;
+    font-size: 1.2rem;
+}
+
+a.pi:hover {
+    color: white;
+    opacity: 0.9;
+}
+
+
+/* Scroll to top
+---------------------------------- */
+.scrollToTop {
+	color: #fff;
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	cursor: pointer;
+	background-color: #000000;
+	z-index: 1005;
+	display: none;
+}
+.scrollToTop i {
+	line-height: 50px;
+	font-size: 24px;
+}
+
+/* Small devices (tablets, phones less than 767px) */
+@media (max-width:767px) {
+	.scrollToTop {
+		width: 40px;
+		height: 40px;
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+	.scrollToTop i {
+		line-height: 40px;
+		font-size: 20px;
+	}
 }
