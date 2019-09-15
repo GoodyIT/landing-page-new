@@ -1002,11 +1002,12 @@ img {
 }
 
 .box-style-3 h2 {
-    color: white;
+    color: #393636;
 }
 
 .box-style-3 p {
-    color: #eee;
+    color: #5e5555;
+    font-weight: 600;
     font-size: 15px;
 }
 

@@ -1008,7 +1008,14 @@ color: rgb(255, 255, 255); font-size: 18px;  background-color: rgb(247, 148, 29)
 		.black_bg, .dark.black_bg { background: #000; }
 		.soft_dark_gray_bg, .dark.soft_dark_gray_bg { background: #282828 }
 
-		.pix_builder_bg.custom_moving_bg { background: url(../images/main/banner.png) fixed #444 center ;
+		.pix_builder_bg.custom_moving_bg { background: url(../images/main/custom1.jpeg) fixed #444 center ;
+			-webkit-background-size:cover;
+			-moz-background-size:cover;
+			-o-background-size:cover;
+			background-size:cover !important;
+			min-height: 400px;
+		}
+		.service_moving_bg { background: url(../images/main/AdobeStock_254470248_Preview.jpeg) fixed #444 center ;
 			-webkit-background-size:cover;
 			-moz-background-size:cover;
 			-o-background-size:cover;
