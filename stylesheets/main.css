@@ -22,7 +22,7 @@
 	.pixfort_pix_1 .quote-text{
 		color:#fff;
 		font-size:28px;
-		font-wight:bold;
+		font-weight:bold;
 		line-height: 35px;
 	}
 	
@@ -30,7 +30,7 @@
 	.pixfort_pix_1 .quote-dots{
 		color:rgba(255,255,255,0.7);
 		font-size:28px;
-		font-wight:bold;
+		font-weight:bold;
 		line-height: 35px;
 	}
 	
@@ -38,7 +38,7 @@
 .pixfort_pix_1 .quote-title{
 		color:#fff;
 		font-size:18px;
-		font-wight:bold;
+		font-weight:bold;
 		line-height: 30px;
 }
 	
@@ -1013,6 +1013,7 @@ color: rgb(255, 255, 255); font-size: 18px;  background-color: rgb(247, 148, 29)
 			-moz-background-size:cover;
 			-o-background-size:cover;
 			background-size:cover !important;
+			min-height: 400px;
 		}
 		
 		.blue_moving_bg, .dark.blue_moving_bg { background: url(../images/main/pattern.png) fixed #444 center ;

@@ -1,3 +1,11 @@
+.fixed {
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
 
 .python-bg {
     color: white;
@@ -113,6 +121,11 @@
 .mt-20 {
 	margin-top: 20px;
 }
+
+.mt-30 {
+    margin-top: 30px;
+}
+
 .mb-10 {
 	margin-bottom: 10px;
 }
@@ -163,7 +176,7 @@
 .separator:after {
 	width: 30px;
 	height: 5px;
-	background: #333333;
+	background: #ffa739;
 	position: absolute;
 	top: -1px;
 	left: -1px;
@@ -693,8 +706,13 @@
     font-weight: bold;
 }
 
-.filters .nav > li a:focus, .filters .nav > li a:hover {
+.filters .nav > li.active a {
+    font-weight: 700;
+}
+
+.nav > li a:focus, .nav > li a:hover {
     background:none;
+    color: #ffa739;
 }
 
 .filters .nav > li {
@@ -823,7 +841,7 @@
 	margin: 0;
 }
 a.overlay {
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(0, 0, 0, 0.6);
 	cursor: pointer;
 }
 a.overlay:hover {
@@ -846,7 +864,7 @@ a.overlay i {
 	top: 50%;
 	font-size: 40px;
 	line-height: 42px;
-	color: #e84c3d;
+	color: #f77825;
 	margin-top: -22px;
 	margin-left: -18px;
 	text-align: center;
@@ -896,7 +914,10 @@ a.overlay.small i {
 ---------------------------------- */
 .image-box {
 	background-color: #fafafa;
-	border: 1px solid #f3f3f3;
+    /* border: 1px solid #f3f3f3; */
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
 }
 .grid-space-0 .image-box {
 	border: none;
@@ -936,4 +957,45 @@ img {
 	.isotope-item {
 		max-width: 100%;
 	}
+}
+
+.pixfort_normal_1 .subtitle_style {
+    padding: 50px 0;
+}
+
+.parallax-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    border-radius: 0;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+    opacity: 0.85;
+}
+
+.box-style-3 h2 {
+    color: white;
+}
+
+.box-style-3 p {
+    color: #eee;
+    font-size: 15px;
+}
+
+.footer-background-img {
+    background: url('https://agileengine.com/wordpress/wp-content/uploads/redesign-img/map-bg.jpg');
+}
+
+.bold-weight {
+    font-weight: bold;
+}
+
+.link-contact-us {
+    background: #eb1c23;
+    color: white;
 }
