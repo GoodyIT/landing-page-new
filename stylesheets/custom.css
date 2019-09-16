@@ -383,7 +383,8 @@
     padding-top: 40px;
     padding-right: 0px;
     padding-bottom: 80px;
-    padding-left: calc((100vw - 1140px) / 2);
+    /* padding-left: calc((100vw - 1140px) / 2); */
+    padding-left: 0;
 }
 
 .home-service-list-wrap .home-service-list .single-service-wrap:nth-child(2n) {
@@ -1152,6 +1153,10 @@ a.pi:hover {
 #section_features_2_dark {
     background-image: url('/images/main/main_right.jpeg');
     background-size:cover !important;
+}
+
+#section_features_2_dark .container {
+    margin-left: 0;
 }
 
 #section_normal_4_1:after {
