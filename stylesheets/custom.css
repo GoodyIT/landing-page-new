@@ -1346,12 +1346,29 @@ a.pi:hover {
     animation-timing-function: step-end;
 }
 
+.floating_wrap .btns_wrap .mail_wrap {
+    width: 270px;
+    position: fixed;
+    right: -205px;
+    background: #fff;
+    top: 13%;
+    border-radius: 10px 0px 0px 10px;
+    overflow: hidden;
+    z-index: 15;
+    box-shadow: 0px 0px 40px #00000026 !important;
+    transition: right 400ms ease-in;
+    transform-origin: right;
+    will-change: transform;
+    animation-duration: 400ms;
+    animation-timing-function: step-end;
+}
+
 .floating_wrap .btns_wrap a:hover {
     text-decoration: none !important;
     right: 0px;
 }
 
-.floating_wrap .btns_wrap .call_wrap i {
+.floating_wrap .btns_wrap i {
     color: #fff;
     background: #eb1c23;
     font-size: 26px;
@@ -1365,7 +1382,7 @@ a.pi:hover {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8285a', endColorstr='#90298b',GradientType=1 );
 }
 
-.floating_wrap .btns_wrap .call_wrap span {
+.floating_wrap .btns_wrap span {
     color: #eb1c23;
     font-size: 20px;
     vertical-align: middle;
