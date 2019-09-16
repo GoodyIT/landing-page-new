@@ -1214,9 +1214,9 @@ a.pi:hover {
     position: relative;
     /* background: #333; */
     /* width: 400px; */
-    height: 70vh;
+    height: 65vh;
     border-radius: 6px;
-    padding: 2rem;
+    padding: 2rem 1.5rem;
     color: #aaa;
     box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
@@ -1259,13 +1259,13 @@ a.pi:hover {
 
 @media (max-height: 850px) {
     .card {
-        height: 78vh;
+        height: 73vh;
     }
 }
 
 @media (max-height: 1024px) {
     .card {
-        height: 70vh;
+        height: 65vh;
     }
 }
 
