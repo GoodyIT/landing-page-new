@@ -1224,6 +1224,18 @@ a.pi:hover {
     }
 }
 
+@media (max-height: 850px) {
+    .card {
+        height: 78vh;
+    }
+}
+
+@media (max-height: 1024px) {
+    .card {
+        height: 70vh;
+    }
+}
+
 .card__svg {
     position: absolute;
     left: 0;
@@ -1292,7 +1304,13 @@ a.pi:hover {
     top: 22%;
     border-radius: 10px 0px 0px 10px;
     overflow: hidden;
+    z-index: 15;
     box-shadow: 0px 0px 40px #00000026 !important;
+    transition: right 400ms ease-in;
+    transform-origin: right;
+    will-change: transform;
+    animation-duration: 400ms;
+    animation-timing-function: step-end;
 }
 
 .floating_wrap .btns_wrap a:hover {
@@ -1320,4 +1338,35 @@ a.pi:hover {
     vertical-align: middle;
     background: #fff;
     padding: 15px 20px 15px 15px;
+}
+
+/* Moving cloud text */
+.cloud-text {
+	font-family: 'Coiny', cursive;
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;	
+	background-image: url('/images/main/clouds.jpg');
+	background-size: auto;
+	background-attachment: unset;
+	background-position: 0%;
+	width: 80%;
+    /* margin: 10%; */
+    padding: 20px 0;
+	font-size: 134px;
+	animation: clouds-moving infinite 120s;
+	animation-fill-mode: forwards;
+	animation-play-state: running;
+	animation-timing-function: linear;
+	text-align: center;
+}
+@keyframes clouds-moving {
+	0% {
+		background-position: 0%;	
+	}
+	50% {
+		background-position: 100%;	
+	}
+	100% {
+		background-position: 0%;
+	}
 }
