@@ -1658,7 +1658,7 @@ you can use the generic selector below, but it's slower:
     font-size: 16px;
     padding: 15px 21px;
     line-height: 23px;
-    font-weight: 700;
+    font-weight: bold;
 }
 .navbar-nav .dropdown-toggle .caret {
     border-top-color: #16a085;

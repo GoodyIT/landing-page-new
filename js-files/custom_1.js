@@ -78,6 +78,15 @@ jQuery(document).ready(function($){
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
 
+  // Hover to collapse/expand on service item
+  $(".service-item").hover(
+    function() {
+      $(this).find('.collapse').collapse('show');
+    }, function() {
+      $(this).find('.in').collapse('hide');
+    }
+  );
+
   var delay=0, setTimeoutConst;
   // Isotope filters
       //-----------------------------------------------
