@@ -388,22 +388,23 @@
 
 .home-service-list-wrap .home-service-list .single-service-wrap .service-single {
     height: 100%;
-    min-width: 354px;
+    min-width: 254px;
     position: relative;
-    margin: 0px 18px;
-    padding: 20px 18px 22px;
+    margin: 0px 38px;
+    padding: 20px 10px 22px;
+    border-radius: 6px;
 }
 
 @media (max-height: 850px) and (max-width: 1441px) and (min-width: 1200px) {
     .home-service-list-wrap .home-service-list .single-service-wrap .service-single {
-        margin: 0px 19px;
-        padding: 18px 18px 20px;
+        margin: 0px 39px;
+        padding: 18px 8px 10px;
     }
 }
 
 @media (max-width: 767px) {
     .home-service-list-wrap .home-service-list .single-service-wrap .service-single {
-        margin: 0px 15px;
+        margin: 0px 35px;
         padding: 20px 18px;
     }
 }
@@ -411,7 +412,7 @@
 @media (max-width: 479px) {
     .home-service-list-wrap .home-service-list .single-service-wrap .service-single {
         min-width: 280px;
-        margin: 0px 12px;
+        margin: 0px 32px;
         padding: 17px;
     }
 }
@@ -1011,8 +1012,8 @@ img {
     border-radius: 0;
     -webkit-box-shadow: 0 5px 17px 0 rgba(0,0,0,.05);
     box-shadow: 0 5px 17px 0 rgba(0,0,0,.05);
-    -webkit-transition: all .3s;
-    transition: all .3s;
+    -webkit-transition: all .9s;
+    transition: all .9s;
     opacity: 0.9;
 }
 
