@@ -1190,11 +1190,11 @@ a.pi:hover {
     display: flex;
     justify-content: end;
 }
-.card__line {
+.object-visible .card__line {
     opacity: 0;
     animation: LineFadeIn 0.8s 0.8s forwards ease-in;
 }
-.card__image {
+.object-visible .card__image {
     opacity: 0;
     animation: ImageFadeIn 0.8s 1.4s forwards;
 }
@@ -1204,14 +1204,14 @@ a.pi:hover {
     font-weight: 800;
     letter-spacing: 0.01em;
 }
-.card__content {
+.object-visible .card__content {
     margin-top: 50px;
     opacity: 0;
     animation: ContentFadeIn 0.8s 1.6s forwards;
 }
 
 @media (max-width:767px) {
-    .card__content {
+    .object-visible .card__content {
         margin-top: 100px;
     }
 
