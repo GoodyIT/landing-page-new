@@ -727,7 +727,7 @@
     font-weight: 700;
 }
 
-.nav > li a:focus, .nav > li a:hover {
+ul > li a:focus, ul > li a:hover {
     background:none;
     color: #ffa739;
 }
@@ -1031,6 +1031,10 @@ img {
     background: url('/images/main/map-bg.jpg')
 }
 
+.pixfort_text_4 p, .pixfort_text_3 p, .pixfort_text_2 p, .pixfort_text_2_1 p, .pixfort_medical_3 p {
+    display: block;
+}
+
 .bold-weight {
     font-weight: bold;
 }
@@ -1268,4 +1272,52 @@ a.pi:hover {
         opacity: 1;
         filter: blur(0);
    }
+}
+
+/* floating on the right */
+.floating_wrap {
+    position: relative;
+}
+
+.floating_wrap .btns_wrap {
+    position: absolute;
+    right: 0;
+}
+
+.floating_wrap .btns_wrap .call_wrap {
+    width: 270px;
+    position: fixed;
+    right: -205px;
+    background: #fff;
+    top: 22%;
+    border-radius: 10px 0px 0px 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 40px #00000026 !important;
+}
+
+.floating_wrap .btns_wrap a:hover {
+    text-decoration: none !important;
+    right: 0px;
+}
+
+.floating_wrap .btns_wrap .call_wrap i {
+    color: #fff;
+    background: #eb1c23;
+    font-size: 26px;
+    padding: 15px 23px;
+    border-right: 1px solid #ded9d9;
+    vertical-align: middle;
+    background: #eb1c23;
+    background: -moz-linear-gradient(left, #eb1c23 0%, rgb(183,41,16) 50%, rgb(144,41,39) 100%);
+    background: -webkit-linear-gradient(left, #eb1c23 0%,rgb(183,41,16) 50%,rgb(144,41,39) 100%);
+    background: linear-gradient(to right, #eb1c23 0%,rgb(183,41,16) 50%,rgb(144,41,39) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8285a', endColorstr='#90298b',GradientType=1 );
+}
+
+.floating_wrap .btns_wrap .call_wrap span {
+    color: #eb1c23;
+    font-size: 20px;
+    vertical-align: middle;
+    background: #fff;
+    padding: 15px 20px 15px 15px;
 }
