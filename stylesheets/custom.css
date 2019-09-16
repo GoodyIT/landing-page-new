@@ -1030,12 +1030,23 @@ img {
     color: white;
     padding: 1em 3.8em;
     font-size: 1.2rem;
-    top: 86%;
+    top: 100%;
     left: 50%;
     transform: translate(-150%, -50%);
     position: absolute;
     z-index: 10;
 }
+
+@media (max-width: 767px) {
+    .get-started {
+        left: 80%;
+    }
+}
+
+.creative_video_header {
+    position: relative;
+}
+
 
 a.pi:hover {
     color: white;

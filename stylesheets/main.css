@@ -1023,6 +1023,22 @@ color: rgb(255, 255, 255); font-size: 18px;  background-color: rgb(247, 148, 29)
 			min-height: 400px;
 		}
 		
+		.testimonial_moving_bg { background: url(../images/main/AdobeStock_200094319_Preview.jpeg) fixed #444 center ;
+			-webkit-background-size:cover;
+			-moz-background-size:cover;
+			-o-background-size:cover;
+			background-size:cover !important;
+			min-height: 400px;
+		}
+		
+		.products_moving_bg { background: url(../images/main/AdobeStock_192825974_Preview.jpeg) fixed #444 center ;
+			-webkit-background-size:cover;
+			-moz-background-size:cover;
+			-o-background-size:cover;
+			background-size:cover !important;
+			min-height: 400px;
+		}
+		
 		.blue_moving_bg, .dark.blue_moving_bg { background: url(../images/main/pattern.png) fixed #444 center ;
 			-webkit-background-size:cover;
 			-moz-background-size:cover;

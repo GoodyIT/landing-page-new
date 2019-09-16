@@ -136,7 +136,11 @@ jQuery(document).ready(function($){
 							$(".page-top").css("marginTop", (headerHeight)+"px");
 						} else {
 							$("section.main-container").css("marginTop", (headerHeight)+"px");
-						}
+            }
+            
+            // if ($(".get-started").length>0) {
+						// 	$(".get-started").css("marginTop", -(headerHeight)+"px");
+						// } 
 					}
 				} else {
 					$("body").removeClass("fixed-header-on");
