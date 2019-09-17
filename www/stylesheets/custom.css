@@ -1230,6 +1230,7 @@ a.pi:hover {
 #section_features_2_dark {
     background-image: url('/images/main/man_right.jpeg');
     background-size:cover !important;
+    background-position-x: 100%;
 }
 
 #section_features_2_dark .container {
@@ -1581,6 +1582,7 @@ a.pi:hover {
     #section_features_2_dark {
         background-size: contain !important;
         background-repeat: no-repeat;
+        background-position-y: 100px;
     }
 }
 
