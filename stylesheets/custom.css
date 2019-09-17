@@ -24,8 +24,12 @@
 }
 
 @media (max-width: 375px) {
-    .pix_nav_logo {
-        padding:8px;
+    .header.fixed {
+        /* background: rgb(242, 108, 49) */
+        background: white;
+    }
+    .fixed ul li a {
+        color: #444242;
     }
 }
 
