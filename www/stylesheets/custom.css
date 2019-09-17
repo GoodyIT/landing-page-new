@@ -1134,18 +1134,19 @@ img {
     .contact-us-wrapper {
         flex-direction: column;
     }
-
     .link-contact-us {
         margin-bottom: 0.75rem;
-        margin-right: 5.5rem;
+        max-width: 200px;
     }
-
     .margin-left-20p {
         margin-left: 0;
     }
-
     .mt-30 {
         margin-top: 0;
+    }
+    .pixfort_hotel_5 .subtitle_homes {
+        max-width: 100%;
+        margin-left: 0;
     }
 }
 
@@ -1529,6 +1530,10 @@ a.pi:hover {
     font-family: Roboto;
 }
 
+div.title_56 {
+    font-family: 'Circular Std';
+}
+
 @media (max-width: 375px) {
     .pixfort_normal_1 .title_style {
         font-size: 32px;
@@ -1548,7 +1553,7 @@ a.pi:hover {
         line-height: 28px;
     }
 
-    .big_title {
+    .title_56 {
         font-size: 24px;
         line-height: 32px;
     }
