@@ -1561,6 +1561,11 @@ div.title_56 {
     .big_padding {
         padding: 30px 0;
     }
+
+    #section_features_2_dark {
+        background-size: contain !important;
+        background-repeat: no-repeat;
+    }
 }
 
 img.take-look {
