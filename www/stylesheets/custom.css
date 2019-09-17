@@ -1276,12 +1276,13 @@ a.pi:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: -50px;
 }
 
 .provide-title img {
     width: 120px;
     height: auto;
-    margin-bottom: -20px;
+    margin-bottom: -40px;
 }
 
 #section_normal_4_1:after {
