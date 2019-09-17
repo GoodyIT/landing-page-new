@@ -462,6 +462,7 @@
     width: 100%;
     display: flex;
     align-items: flex-start;
+    opacity: 0.9;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 18px 0px, rgba(0, 0, 0, 0.1) 0px 3px 5px -1px;
     padding: 21px 24px 23px;
@@ -1561,4 +1562,27 @@ img.take-look {
     display: inline-block;
     width: 35px;
     margin-left: 6px;
+}
+
+/* what we provide detail section */
+.experience-section {
+    /* min-height: 130px; */
+    padding: 30px 0;
+}
+
+.experience-section .container {
+    margin: 0 auto !important;
+    font-family: 'tradegothicregular', sans-serif;
+    color:white;
+}
+
+.experience-section .experience-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.experience-section .experience-items .experience-item {
+    text-align: center;
+    margin-right: 10px;
+    padding: 10px;
 }
