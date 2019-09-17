@@ -1586,8 +1586,12 @@ img.take-look {
     justify-content: space-around;
 }
 
-.experience-section .experience-items .experience-item {
+.experience-items .experience-item {
     text-align: center;
     margin-right: 10px;
-    padding: 10px;
+    /* padding: 10px; */
+}
+
+.experience-item div {
+    margin-top: 0.25rem;
 }
