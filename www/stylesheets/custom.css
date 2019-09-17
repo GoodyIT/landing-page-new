@@ -1651,6 +1651,7 @@ img.take-look {
 .experience-items .experience-item {
     text-align: center;
     margin-right: 10px;
+    color: lightgray;
     /* padding: 10px; */
 }
 
