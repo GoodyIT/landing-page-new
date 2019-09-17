@@ -1228,12 +1228,24 @@ a.pi:hover {
 }
 
 #section_features_2_dark {
-    background-image: url('/images/main/man_right_trophy.png');
+    background-image: url('/images/main/man_right.jpeg');
     background-size:cover !important;
 }
 
 #section_features_2_dark .container {
     margin-left: 0;
+}
+
+.provide-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.provide-title img {
+    width: 120px;
+    height: auto;
+    margin-bottom: -20px;
 }
 
 #section_normal_4_1:after {
