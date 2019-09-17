@@ -1093,6 +1093,12 @@ img {
     margin-right: 1rem;
 }
 
+.industrial_icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .industrial_icons i {
     font-size: 2em;
     margin-right: 2rem;
@@ -1154,29 +1160,58 @@ img {
     }
 }
 
+.get-started-wrapper {
+    top: 100%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-150%, -50%);
+    z-index: 10;
+}
+
 .get-started {
     background: #eb1c23;
     color: white;
+    display: inline;
     padding: 1em 3.8em;
     font-size: 1.2rem;
-    top: 100%;
-    left: 50%;
-    transform: translate(-150%, -50%);
-    position: absolute;
-    z-index: 10;
+    overflow: hidden;
+    transition: padding .2s ease, background-position .2s ease, transform .5s ease;;
     background: -moz-linear-gradient(right, #eb1c23 0%, #F00000 50%,#DC281E 100%);
     background: -webkit-linear-gradient(right, #eb1c23 0%, #F00000 50%,#DC281E 100%);
     background: linear-gradient(right, #eb1c23 0%, #F00000 50%,#DC281E 100%);
 }
+/* 
+.get-started:span {
+    margin: 0;
+    padding: 0;
+  }
+  
+.get-started:hover {
+    transform: scale(1, 1);
+    padding-left: 88px;
+    padding-right: 5px;
+    background-position: 5px center;
+}
+  
+.get-started span:nth-child(1) {
+    position: absolute;
+    left: -70px;
+    transition: left .2s ease;
+}
+  
+.get-started:hover span:nth-child(1) {
+    bottom: 3px;
+    left: 20px;
+} */
 
 @media (max-width: 767px) {
-    .get-started {
+    .get-started-wrapper {
         transform: translate(-100%, -50%);
     }
 }
 
 @media (max-width: 375px) {
-    .get-started {
+    .get-started-wrapper {
         transform: translate(-50%, -50%);
     }
 }
@@ -1451,9 +1486,9 @@ a.pi:hover {
 .floating_wrap .btns_wrap .call_wrap {
     width: 270px;
     position: fixed;
-    right: -205px;
+    right: -213px;
     background: #fff;
-    top: 22%;
+    top: 27%;
     border-radius: 10px 0px 0px 10px;
     overflow: hidden;
     z-index: 15;
@@ -1468,9 +1503,9 @@ a.pi:hover {
 .floating_wrap .btns_wrap .mail_wrap {
     width: 270px;
     position: fixed;
-    right: -205px;
+    right: -210px;
     background: #fff;
-    top: 13%;
+    top: 15%;
     border-radius: 10px 0px 0px 10px;
     overflow: hidden;
     z-index: 15;
@@ -1491,7 +1526,7 @@ a.pi:hover {
     color: #fff;
     background: #eb1c23;
     font-size: 26px;
-    padding: 15px 23px;
+    padding: 12px 18px;
     border-right: 1px solid #ded9d9;
     vertical-align: middle;
     background: #eb1c23;
@@ -1588,8 +1623,12 @@ a.pi:hover {
 
 img.take-look {
     display: inline-block;
-    width: 35px;
+    width: 45px;
     margin-left: 6px;
+}
+
+.display-inline {
+    display: inline-block;
 }
 
 /* what we provide detail section */
