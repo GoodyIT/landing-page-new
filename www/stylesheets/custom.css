@@ -411,7 +411,7 @@
     position: relative;
     margin: 0px 38px;
     padding: 20px 10px 22px;
-    border-radius: 6px;
+    border-radius: 10px;
 }
 
 .home-service-list-wrap .home-service-list .single-service-wrap .service-single:hover {
@@ -1083,13 +1083,9 @@ img {
     font-weight: bold;
 }
 
-.industrial_icons {
-    display: flex;
-}
-
 .industrial_icons img {
-    width: 35px;
-    height: auto;
+    max-height: 45px;
+    min-width: 45px;
     margin-right: 1rem;
 }
 
@@ -1171,14 +1167,61 @@ img {
 .get-started {
     background: #eb1c23;
     color: white;
+    outline: none;
+    border:none;
     display: inline;
     padding: 1em 3.8em;
     font-size: 1.2rem;
     overflow: hidden;
-    transition: padding .2s ease, background-position .2s ease, transform .5s ease;;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    /* transition: padding .2s ease, background-position .2s ease, transform .5s ease;; */
     background: -moz-linear-gradient(right, #eb1c23 0%, #F00000 50%,#DC281E 100%);
     background: -webkit-linear-gradient(right, #eb1c23 0%, #F00000 50%,#DC281E 100%);
     background: linear-gradient(right, #eb1c23 0%, #F00000 50%,#DC281E 100%);
+}
+
+.get-started::after {
+    width: 60px;
+    height: 200%;
+    background: rgba(255,255,255,0.1);
+    z-index: 1;
+    right: 0;
+    top: 0;
+    margin: -5px 0 0 -5px;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform-origin: 0 0;
+    -moz-transform: rotate(-20deg);
+    -ms-transform-origin: 0 0;
+    -ms-transform: rotate(-20deg);
+    transform-origin: 0 0;
+    transform: rotate(-20deg);
+    content: '';
+    position: absolute;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.get-started:hover {
+    color:white;
+    opacity: 0.9;
+    border: none;
+    outline: none;
+    background: -moz-linear-gradient(right, #eb1c23 0%, #F00000 50%,#DC281E 100%);
+    background: -webkit-linear-gradient(right, #eb1c23 0%, #F00000 50%,#DC281E 100%);
+    background: linear-gradient(right, #eb1c23 0%, #F00000 50%,#DC281E 100%);
+}
+
+.get-started:hover::after {
+    width: 40%;
+}
+
+.icon-arrow-right::before {
+    content: "\e00d";
 }
 /* 
 .get-started:span {
@@ -1350,7 +1393,7 @@ a.pi:hover {
     /* background: #333; */
     /* width: 400px; */
     /* height: 65vh; */
-    border-radius: 6px;
+    border-radius: 10px;
     padding: 2rem 1.5rem;
     color: #aaa;
     box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
@@ -1486,10 +1529,11 @@ a.pi:hover {
 
 .floating_wrap .btns_wrap .call_wrap {
     width: 270px;
+    text-decoration: none !important;
     position: fixed;
     right: -213px;
     background: #fff;
-    top: 27%;
+    top: 24%;
     border-radius: 10px 0px 0px 10px;
     overflow: hidden;
     z-index: 15;
@@ -1504,6 +1548,7 @@ a.pi:hover {
 .floating_wrap .btns_wrap .mail_wrap {
     width: 270px;
     position: fixed;
+    text-decoration: none !important;
     right: -210px;
     background: #fff;
     top: 15%;
