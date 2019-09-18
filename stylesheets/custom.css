@@ -1142,7 +1142,7 @@ img {
     }
     .link-contact-us {
         margin-bottom: 0.75rem;
-        max-width: 200px;
+        max-width: 180px;
     }
     .margin-left-20p {
         margin-left: 0;
@@ -1313,6 +1313,37 @@ a.pi:hover {
 
 #section_features_2_dark .container {
     margin-left: 0;
+}
+
+#section_skills {
+    background-image: url('/images/main/skills.png');
+    background-size:contain !important;
+    background-position-x: 0;
+    background-position-y: 75px;
+    background-repeat:no-repeat;
+    /* background-clip: content-box; */
+    background-attachment: fixed;
+}
+
+.skills-container {
+    margin-right: -100px;
+    margin-left: 150px;
+}
+
+@media (max-width:960px) {
+    .skills-container {
+        margin-right: -10px;
+        margin-left: 15px;
+    }
+}
+
+@media (max-width:840px) {
+    .skills-container {
+        margin: 0;
+    }
+    #section_skills {
+        background-image: none;
+    }
 }
 
 .provide-title {
@@ -1628,7 +1659,7 @@ a.pi:hover {
     font-family: Roboto;
 }
 
-.title_56, div.big_title {
+.title_56, .big_title {
     font-family: 'Circular Std';
 }
 
@@ -1638,7 +1669,7 @@ a.pi:hover {
     }
 
     .normal_text {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .normal_title {
@@ -1647,6 +1678,16 @@ a.pi:hover {
     }
 
     .big_text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .big_title {
+        font-size: 32px;
+        line-height: 32px;
+    } 
+
+    .experience-item .normal_title {
         font-size: 18px;
         line-height: 28px;
     }
@@ -1696,7 +1737,7 @@ img.take-look {
 
 .experience-items .experience-item {
     text-align: center;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     color: lightgray;
     /* padding: 10px; */
 }
